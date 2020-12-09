@@ -57,16 +57,15 @@ matches:
 
               #include <iostream>
 
-              using namespace std;
-
-              int main(int argc,char *argv[])
+              int main(int argc, char *argv[])
               {
-              $|$
+                  $|$
 
-              cout << "ALL ACCEPTED ! Edit by csy !" << endl;
-              //system( "pause" );
-              return 0;
-              
+
+                  std::cout << "ALL ACCEPTED ! Edit by csy !" << std::endl;
+                  //system( "pause" );
+                  return 0;
+              }
 
   # Shell Script --------------------------------------
   - trigger: "ibash"
@@ -76,6 +75,10 @@ matches:
               # Author: JeremyC
               # Note: 
               # -----------------
+              $|$
+
+
+              exit 0
 
   # GMT -----------------------------------------------
   - trigger: "igmt"
