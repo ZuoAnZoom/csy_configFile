@@ -19,3 +19,6 @@
 - alacritty
 - espanso
 - ss
+- taskwarrior
+- vnote
+
