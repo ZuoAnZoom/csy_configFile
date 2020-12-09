@@ -27,3 +27,6 @@ cp ~/Desktop/JMS.sh ./shadowsocks/
 # vnote
 cp -r ~/.config/vnote/snippets ./vnote/
 cp -r ~/.config/vnote/templates/ ./vnote/
+
+
+exit 0
