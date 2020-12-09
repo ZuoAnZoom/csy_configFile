@@ -23,3 +23,6 @@ cp ~/Desktop/JMS.sh ./shadowsocks/
 
 # taskwarrior
 # html file
+
+# vnote
+cp -r ~/.config/vnote/snippets ./vnote/
