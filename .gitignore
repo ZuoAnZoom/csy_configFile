@@ -1,0 +1,16 @@
+#ignore folder
+build/
+lib/
+bin/
+.idea/
+cmake-build-debug/
+.vscode/
+.cache/
+
+#ignore file
+*.out
+*.o
+.DS_Store
+*.swp
+
+
