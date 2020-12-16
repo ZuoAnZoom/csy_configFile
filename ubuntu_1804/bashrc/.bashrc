@@ -130,6 +130,7 @@ POWERLINE_BASH_SELECT=1
 
 source /opt/ros/melodic/setup.bash
 source /home/csy/workspace_csy/catkin_ws/devel/setup.bash
+source /home/csy/workspace_csy/catkin_qt/devel/setup.bash
 
 
 #export http_proxy="http://127.0.0.1:8889"
@@ -138,7 +139,9 @@ source /home/csy/workspace_csy/catkin_ws/devel/setup.bash
 alias goproxy="export ALL_PROXY=socks5://127.0.0.1:1080"
 alias disproxy="unset ALL_PROXY"
 alias checkproxy="curl cip.cc"
-
+alias tx="tmux"
+alias txls="tmux list-sessions"
+alias txks="tmux kill-session -t"
 
 
 # >>> conda initialize >>>
@@ -155,4 +158,11 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+
+export PATH=${PATH}:/home/csy/Qt5.14.2/5.14.2/gcc_64/bin:/home/csy/Qt5.14.2/Tools/QtCreator/bin
+
+export QT_DEBUG_PLUGINS=1
+
+
 
