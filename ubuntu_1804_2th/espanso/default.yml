@@ -1,0 +1,136 @@
+# espanso configuration file
+
+# This is the default configuration file, change it as you like it
+# You can refer to the official documentation:
+# https://espanso.org/docs/
+
+# Matches are the substitution rules, when you type the "trigger" string
+# it gets replaced by the "replace" string.
+global_vars:
+  # set by csy
+  - name: "time"
+    type: date
+    params:
+      format: "%H:%M:%S"
+
+  - name: "date"
+    type: date
+    params:
+      format: "%y-%m-%d"
+
+  - name: "week"
+    type: date
+    params:
+      format: "%a"
+
+  - name: "tab"
+    type: date
+    params:
+      format: " "
+
+
+matches:
+  # email ---------------------------------------------
+  - trigger: "iqqyx"
+    replace: "476234335@qq.com"
+
+  - trigger: "imsn"
+    replace: "csy476234335@msn.cn"
+
+  - trigger: "igmail"
+    replace: "476234335csy@gmail.com"
+
+  - trigger: "i1631"
+    replace: "shanyao_work@163.com"
+
+  - trigger: "i1632"
+    replace: "csy476234335@163.com"
+
+  # C++ -----------------------------------------------
+  - trigger: "icpp"
+    replace: |
+              /* Established Date: {{date}} {{week}} {{time}}
+              ** Author: JeremyC
+              ** Note: 
+              */ --------------------
+              #include <iostream>
+              int main(int argc, char *argv[])
+              {
+                  $|$
+                  std::cout << "ALL ACCEPTED ! Edit by csy !" << std::endl;
+                  //system( "pause" );
+                  return 0;
+              }
+  # Shell Script --------------------------------------
+  - trigger: "ibash"
+    replace: |
+              #!/usr/bin/env bash
+              # Established Date: {{date}} {{week}} {{time}}
+              # Author: JeremyC
+              # Note: 
+              # -----------------
+              $|$
+              exit 0
+  # GMT -----------------------------------------------
+  - trigger: "igmt"
+    replace: "gmt begin pic_1 png\n$|$\ngmt end show"
+
+  # Markdown ------------------------------------------
+  # CheckBox
+  - trigger: "ibox"
+    replace: "- [ ] "
+  - trigger: "iBOX"
+    replace: "- [x] "
+  # HighLight(HL)
+  - trigger: "ihl"
+    replace: "<mark>$|$</mark>"
+  # UnderLine(UL)
+  - trigger: "iul"
+    replace: "<u>$|$</u>"
+  # Anchor(Click to jump in the sanme page)
+  - trigger: "ianchor"
+    replace: '<u id="anchor_$|$"> Put Your Contents Here </u>[点我跳转](#anchor_)'
+  # FootNote(FN,[^1],[^2]...)
+  - trigger: "ifn"
+    replace: "[^$|$]"
+  # Font Color
+  - trigger: "ired"
+    replace: "<font color=red>$|$</font>"
+  # Image Size
+  - trigger: "iimg"
+    replace: '<img src="$|$" width="50%" height="50%">'
+  # Align(center,left,right)
+  - trigger: "ialign"
+    replace: "<div align=center>$|$</div>"
+
+
+  # Dates ---------------------------------------------
+  - trigger: "idate"
+    replace: "{{date}}"
+
+  - trigger: "iweek"
+    replace: "{{week}}"
+
+  - trigger: "itime"
+    replace: "{{time}}"
+    
+  # Names ---------------------------------------------
+  - trigger: "ixjy"
+    replace: "薛璟瑶"
+
+  # Coding --------------------------------------------
+  - trigger: "izs"
+    replace: "//$|$"
+
+  - trigger: "iadd"
+    replace: "__add_by_csy_{{date}}"
+
+  # Shell commands ------------------------------------
+  - trigger: ":shell"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "echo Hello from your shell"
+
