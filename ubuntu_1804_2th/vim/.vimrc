@@ -110,7 +110,8 @@ set noerrorbells                "出错时，不要发出响声
 set visualbell                  "出错时，发出视觉提示，通常是屏幕闪烁
 set history=100                 "Vim 需要记住多少次历史操作
 set autoread                    "打开文件监视。在编辑过程中文件被外部改变了就会发出提示
-set listchars=tab:»■,trail:■    "如果行尾有多余的空格、Tab，让它们显示成可见的小方块，方便定位错误
+"set listchars=tab:»■,trail:■    "如果行尾有多余的空格、Tab，让它们显示成可见的小方块，方便定位错误
+set listchars=tab:>-,trail:-
 set list
 set wildmenu
 set wildmode=longest:list,full  "命令模式下，底部操作指令按下 Tab 键自动补全
