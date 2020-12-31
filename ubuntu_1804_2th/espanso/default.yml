@@ -119,11 +119,11 @@ matches:
     replace: "薛璟瑶"
 
   # Coding --------------------------------------------
-  - trigger: "izs"
-    replace: "//$|$"
+  #- trigger: "izs"
+  #  replace: "//$|$"
 
   - trigger: "iadd"
-    replace: "__add_by_csy_{{date}}"
+    replace: "//$|$__add_by_csy_{{date}}"
 
   # Shell commands ------------------------------------
   - trigger: ":shell"

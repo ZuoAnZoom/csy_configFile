@@ -128,6 +128,8 @@ alias txa="tmux a"
 alias txls="tmux list-sessions"
 alias txks="tmux kill-session -t"
 
+# ranger
+alias ra="ranger"
 
 source "$HOME/.cargo/env"
 source /home/csy/alacritty/extra/completions/alacritty.bash
@@ -145,9 +147,11 @@ POWERLINE_BASH_SELECT=1
 
 
 source /opt/ros/melodic/setup.bash
-source /home/csy/workspace_csy/catkin_ws/devel/setup.bash
 source /home/csy/workspace_csy/catkin_qt/devel/setup.bash
+source /home/csy/workspace_csy/catkin_ws/devel/setup.bash
 
+#export ROS_HOSTNAME=csy
+#export ROS_MASTER_URI=http://192.168.1.106:11311
 
 #export XMODIFIERS=@im=fcitx  
 #export XIM=fcitx  
