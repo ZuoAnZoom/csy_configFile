@@ -11,15 +11,24 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'preservim/nerdtree'
 Plugin 'morhetz/gruvbox'
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'jayli/vim-easycomplete'
 
 call vundle#end()
 
+
+"---------------Vim-plug-Settings------------------------
+call plug#begin('~/.vim/plugged')
+
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+call plug#end()
 
 
 "----------------OtherVimSettingsByCsy-------------------
 "基本配置
 set nocompatible                "不与vi兼容
-"set backspace=indent,eol,start  "设置backspace选项的值
+set backspace=indent,eol,start  "设置backspace选项的值
 syntax enable                   "开启语法高亮
 syntax on                       "打开语法高亮
 set showcmd                     "底部显示当前键入的指令
@@ -58,14 +67,10 @@ set smarttab                  "在行和段开始处使用制表符
 set softtabstop=4             "Tab 转为多少个空格
 set cindent                   "设置C风格的自动缩进
 
-let c_comment_strings = 1
-unlet c_comment_strings
-
 
 "外观
 colorscheme molokai           "设置主题
 "colorscheme gruvbox
-set guifont=Fira\ Mono\ for\ Powerline:h10   " 设置字体 
 set background=dark           "设置背景颜色
 set number                    "显示行号
 set relativenumber            "使用相对行号
@@ -77,7 +82,7 @@ set wrap                      "自动折行，即太长的行分成几行显示
 set linebreak                 "遇到空格、连词号和其他标点符号才发生折行，不会在单词内部折行
 set wrapmargin=2              "指定折行处与编辑窗口的右边缘之间空出的字符数
 set scrolloff=5               "垂直滚动时，光标距离顶部/底部的位置（单位：行）
-"set sidescrolloff=15          "水平滚动时，光标距离行首或行尾的位置（单位：字符）
+set sidescrolloff=15          "水平滚动时，光标距离行首或行尾的位置（单位：字符）
 set laststatus=2              "是否显示状态栏:0不显示，1只在多窗口时显示，2显示
 set ruler                     "在状态栏显示光标的当前位置
 set cmdheight=2               "设置命令行高度
@@ -93,7 +98,7 @@ set smartcase                 "如果同时打开了 ignorecase，那么对于�
 
 
 "编辑
-set spell spelllang=en_us       "打开英语单词的拼写检查
+"set spell spelllang=en_us       "打开英语单词的拼写检查
 "set nobackup                    "不创建备份文件
 "set noswapfile                  "不创建交换文件
 "set undofile                    "保留撤销历史
