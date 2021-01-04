@@ -11,6 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'preservim/nerdtree'
 Plugin 'morhetz/gruvbox'
+Plugin 'majutsushi/tagbar'
 "Plugin 'Valloric/YouCompleteMe'
 "Plugin 'jayli/vim-easycomplete'
 
@@ -119,9 +120,9 @@ set wildmode=longest:list,full  "命令模式下，底部操作指令按下 Tab 
 
 "设置语法折叠
 set foldenable                  "开始折叠
-set foldmethod=syntax           "设置语法折叠
+set foldmethod=indent           "设置语法折叠
 set foldcolumn=2                "设置折叠区域的宽度
-setlocal foldlevel=3            "设置折叠层数为
+setlocal foldlevel=2            "设置折叠层数为
 
 
 
@@ -129,13 +130,18 @@ setlocal foldlevel=3            "设置折叠层数为
 map <C-l> :nohl<CR>             "关闭搜索高亮
 
 
+"--------------ctags: ctags -R--------------
+if filereadable("tags")
+        set tags=tags
+endif
+
 
 "-------------NERDTree---------------
 let NERDTreeIgnore = ['__pycache__', '\.pyc$', '\.o$', '\.so$', '\.a$', '\.swp', '*\.swp', '\.swo', '\.swn', '\.swh', '\.swm', '\.swl', '\.swk', '\.sw*$', '[a-zA-Z]*egg[a-zA-Z]*', '.DS_Store']
 let NERDTreeShowHidden=1
 let g:NERDTreeWinPos="left"
 let g:NERDTreeDirArrows=0
-map <C-t> :NERDTreeToggle<CR>    "打开/关闭 NERDTree
+map <C-e> :NERDTreeToggle<CR>    "打开/关闭 NERDTree
 
 
 "--------------add powerline to vim---------------

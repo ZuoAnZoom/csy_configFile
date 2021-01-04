@@ -95,6 +95,14 @@
             "selection_mark": "$$",
             "shortcut": "f",
             "type": 0
+        },
+        {
+            "auto_indent": false,
+            "cursor_mark": "@@",
+            "name": "行内代码",
+            "selection_mark": "$$",
+            "shortcut": "x",
+            "type": 0
         }
     ],
     "version": "1"
