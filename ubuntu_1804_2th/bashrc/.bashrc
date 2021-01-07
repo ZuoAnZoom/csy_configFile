@@ -150,8 +150,8 @@ source /opt/ros/melodic/setup.bash
 source /home/csy/workspace_csy/catkin_qt/devel/setup.bash
 source /home/csy/workspace_csy/catkin_ws/devel/setup.bash
 
-export ROS_HOSTNAME=follow
-export ROS_MASTER_URI=http://master:11311
+#export ROS_HOSTNAME=follow
+#export ROS_MASTER_URI=http://master:11311
 
 #export XMODIFIERS=@im=fcitx  
 #export XIM=fcitx  
