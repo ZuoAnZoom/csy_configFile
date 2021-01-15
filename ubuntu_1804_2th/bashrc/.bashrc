@@ -127,6 +127,7 @@ alias tx="tmux"
 alias txa="tmux a"
 alias txls="tmux list-sessions"
 alias txks="tmux kill-session -t"
+alias txn="tmux new-window"
 
 # ranger
 alias ra="ranger"
