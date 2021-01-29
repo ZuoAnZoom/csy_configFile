@@ -44,10 +44,10 @@ conky.config = {
 
 
 conky.text = [[
-  ${color2}${font}${font Open Sans:size=44}$alignr${time %H:%M}$font${color2}${font Open Sans:size=15}
-  $alignr${time %a}, ${time %d %b %Y}$font$color
+  ${color2}${font}${font Open Sans:size=44}$alignc${time %H:%M}$font${color2}${font Open Sans:size=15}
+  $alignc${time %a}, ${time %d %b %Y}$font$color
 # csy_Pop!
-  ${color2}${font Open Sans:Bold:size=15}${alignc}  csy_Pop!
+  ${color Orange}${font Open Sans:Bold:size=15}${alignc}  csy_Pop!
 
 # SYSTEM
   ${color1}${font Open Sans:Bold:size=10}SYSTEM ${hr 2}${color2}${font}${offset 1}

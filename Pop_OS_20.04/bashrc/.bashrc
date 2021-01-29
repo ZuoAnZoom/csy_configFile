@@ -122,7 +122,8 @@ source /home/csy/alacritty/extra/completions/alacritty.bash
 
 
 # proxy
-alias goproxy="export ALL_PROXY=socks5://127.0.0.1:1089"
+#alias goproxy="export ALL_PROXY=socks5://127.0.0.1:1089"
+alias goproxy="export ALL_PROXY=socks5://192.168.2.1:9050"
 alias disproxy="unset ALL_PROXY"
 alias checkproxy="curl cip.cc"
 
@@ -147,11 +148,5 @@ POWERLINE_BASH_SELECT=1
 
 # ROS
 source /opt/ros/noetic/setup.bash
-
-
-
-
-
-
 
 
