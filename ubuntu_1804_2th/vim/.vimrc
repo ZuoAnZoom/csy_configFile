@@ -38,6 +38,7 @@ set mouse=a                     "支持使用鼠标
 set selection=exclusive
 set selectmode=mouse,key
 set paste                       "保证鼠标右键粘粘时内容不会变形或胡乱缩进
+set clipboard=unnamedplus
 set t_Co=256                    "启用 256 色
 set encoding=utf-8              "设置编码
 set fileencodings=utf-8,gb2312,gbk,cp936,latin-1
@@ -120,9 +121,9 @@ set wildmode=longest:list,full  "命令模式下，底部操作指令按下 Tab 
 
 "设置语法折叠
 set foldenable                  "开始折叠
-set foldmethod=indent           "设置语法折叠
-set foldcolumn=2                "设置折叠区域的宽度
-setlocal foldlevel=2            "设置折叠层数为
+"set foldmethod=indent           "设置语法折叠
+"set foldcolumn=2                "设置折叠区域的宽度
+"setlocal foldlevel=2            "设置折叠层数为
 
 
 
