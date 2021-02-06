@@ -38,6 +38,7 @@ set mouse=a                     "支持使用鼠标
 set selection=exclusive
 set selectmode=mouse,key
 set paste                       "保证鼠标右键粘粘时内容不会变形或胡乱缩进
+set clipboard=unnamedplus
 set t_Co=256                    "启用 256 色
 set encoding=utf-8              "设置编码
 set fileencodings=utf-8,gb2312,gbk,cp936,latin-1
