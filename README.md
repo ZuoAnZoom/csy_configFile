@@ -6,6 +6,7 @@
 
 包括：
 - ubuntu_1804
+- ubuntu_1804_02
 - MAC
 - Jeston
 
