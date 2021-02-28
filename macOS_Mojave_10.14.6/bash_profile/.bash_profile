@@ -56,8 +56,11 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # 使用curl命令验证终端是否代理：curl cip.cc
-alias goproxy='export http_proxy=http://127.0.0.1:1087 https_proxy=http://127.0.0.1:1087'
+alias goproxy='export http_proxy=http://127.0.0.1:8889 https_proxy=http://127.0.0.1:8889'
 alias disproxy='unset http_proxy https_proxy'
+#alias goproxy="export ALL_PROXY=socks5://127.0.0.1:1089"
+#alias disprocy="unset ALL_PROXY"
+alias checkproxy="curl cip.cc"
 
 export LC_ALL=en_US.UTF-8
 
