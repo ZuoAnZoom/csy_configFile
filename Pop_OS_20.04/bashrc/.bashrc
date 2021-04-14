@@ -150,3 +150,26 @@ POWERLINE_BASH_SELECT=1
 source /opt/ros/noetic/setup.bash
 
 
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/csy/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/csy/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/csy/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/csy/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+#cuda
+export PATH="/usr/local/cuda-11.1/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/local/cuda-11.1/lib64:$LD_LIBRARY_PATH"
+
+
+#alias
+alias nvidia-smi="watch -n 0.1 -d nvidia-smi" 

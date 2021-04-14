@@ -22,6 +22,7 @@ call vundle#end()
 "call plug#begin('~/.vim/plugged')
 
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'hzchirs/vim-material'
 
 "call plug#end()
 
@@ -71,8 +72,9 @@ set cindent                   "设置C风格的自动缩进
 
 
 "外观
-colorscheme molokai           "设置主题
-"colorscheme gruvbox
+"colorscheme molokai           "设置主题
+"colorscheme vim-material           "设置主题
+colorscheme gruvbox
 set background=dark           "设置背景颜色
 set number                    "显示行号
 set relativenumber            "使用相对行号
@@ -92,6 +94,7 @@ set cmdheight=2               "设置命令行高度
 
 "搜索
 set showmatch                 "遇到括号时自动高亮对应的另一个括号
+"hi MatchParen ctermbg=Yellow guibg=lightblue
 set mat=5                     "匹配括号高亮的时间（单位是十分之一秒）
 set hlsearch                  "搜索时高亮显示匹配结果
 set incsearch                 "搜索时每输入一个字符就自动跳到第一个匹配的结果
