@@ -1,0 +1,109 @@
+{
+    "snippets": [
+        {
+            "auto_indent": true,
+            "cursor_mark": "@@",
+            "name": "字体颜色",
+            "selection_mark": "$$",
+            "shortcut": "r",
+            "type": 0
+        },
+        {
+            "auto_indent": true,
+            "cursor_mark": "@@",
+            "name": "高亮",
+            "selection_mark": "$$",
+            "shortcut": "h",
+            "type": 0
+        },
+        {
+            "auto_indent": true,
+            "cursor_mark": "@@",
+            "name": "check box",
+            "selection_mark": "$$",
+            "shortcut": "b",
+            "type": 0
+        },
+        {
+            "auto_indent": false,
+            "cursor_mark": "@@",
+            "name": "Done box",
+            "selection_mark": "$$",
+            "shortcut": "d",
+            "type": 0
+        },
+        {
+            "auto_indent": false,
+            "cursor_mark": "@@",
+            "name": "插入日期时间",
+            "selection_mark": "$$",
+            "shortcut": "t",
+            "type": 0
+        },
+        {
+            "auto_indent": false,
+            "cursor_mark": "@@",
+            "name": "下划线",
+            "selection_mark": "$$",
+            "shortcut": "u",
+            "type": 0
+        },
+        {
+            "auto_indent": false,
+            "cursor_mark": "@@",
+            "name": "Strike",
+            "selection_mark": "$$",
+            "shortcut": "s",
+            "type": 0
+        },
+        {
+            "auto_indent": true,
+            "cursor_mark": "@@",
+            "name": "行内公式",
+            "selection_mark": "$$",
+            "shortcut": "e",
+            "type": 0
+        },
+        {
+            "auto_indent": false,
+            "cursor_mark": "@@",
+            "name": "_网址_",
+            "selection_mark": "$$",
+            "shortcut": "l",
+            "type": 0
+        },
+        {
+            "auto_indent": false,
+            "cursor_mark": "@@",
+            "name": "_注意_",
+            "selection_mark": "$$",
+            "shortcut": "n",
+            "type": 0
+        },
+        {
+            "auto_indent": false,
+            "cursor_mark": "@@",
+            "name": "_？？_",
+            "selection_mark": "$$",
+            "shortcut": "a",
+            "type": 0
+        },
+        {
+            "auto_indent": false,
+            "cursor_mark": "@@",
+            "name": "_文档_",
+            "selection_mark": "$$",
+            "shortcut": "f",
+            "type": 0
+        },
+        {
+            "auto_indent": false,
+            "cursor_mark": "@@",
+            "name": "行内代码",
+            "selection_mark": "$$",
+            "shortcut": "x",
+            "type": 0
+        }
+    ],
+    "version": "1"
+}
