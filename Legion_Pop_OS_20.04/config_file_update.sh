@@ -4,8 +4,8 @@
 cp ~/.bashrc ./bashrc/
 
 # vim
-#cp ~/.vimrc ./vim/
-#cp ~/.vim/.ycm_extra_conf.py ./vim/YCM/
+cp ~/.vimrc ./vim/
+cp ~/.vim/.ycm_extra_conf.py ./vim/YCM/
 
 # tmux
 cp ~/.tmux.conf ./tmux/

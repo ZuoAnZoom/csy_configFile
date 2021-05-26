@@ -122,8 +122,9 @@ source /home/csy/Downloads/installed/alacritty/extra/completions/alacritty.bash
 
 
 # proxy
-alias goproxy="export ALL_PROXY=socks5://127.0.0.1:1089"
+#alias goproxy="export ALL_PROXY=socks5://127.0.0.1:1089"
 #alias goproxy="export ALL_PROXY=socks5://192.168.2.1:9050"
+alias goproxy="export ALL_PROXY=http://127.0.0.1:8889"
 alias disproxy="unset ALL_PROXY"
 alias checkproxy="curl cip.cc"
 
@@ -160,4 +161,15 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+
+# powerline
+export TERM="screen-256color"
+powerline-daemon -q
+POWERLINE_BASH_CONTINUATION=1
+POWERLINE_BASH_SELECT=1
+. /home/csy/.local/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh
+
+
+
 

@@ -20,18 +20,18 @@ window.dynamic_title: ture
 # Font Customization
 font:
   normal:
-    family: DejaVu Sans Mono
-#    family: FiraCode Nerd Font Mono
+   #family: DejaVu Sans Mono
+    family: Fira Code 
     style: Regular
   bold:
-    family: DejaVu Sans Mono
-#    family: FiraCode Nerd Font Mono
+    family: Fira Code 
+    #family: DejaVu Sans Mono
     style: Bold
   italic:
-    family: DejaVu Sans Mono
-#    family: FiraCode Nerd Font Mono
+    family: Fira Code 
+    #family: DejaVu Sans Mono
     style: Italic
-  size: 11
+  size: 11.5
   offset:
     x: 0
     y: 0
