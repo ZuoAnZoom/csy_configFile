@@ -16,6 +16,15 @@ Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
+"--------GruvboxThemeSettings--------
+"let g:gruvbox_underline=1
+"let g:gruvbox_undercurl=1
+"let g:gruvbox_bold=1
+"let g:gruvbox_italic=1
+"let g:gruvbox_transparent_bg=1
+autocmd VimEnter * hi Normal ctermbg=none  "用来设置 Gruvbox 的背景透明，需要 Terminal 支持
+
+
 
 "-------------NERDTree---------------
 let NERDTreeIgnore = ['__pycache__', '\.pyc$', '\.o$', '\.so$', '\.a$', '\.swp', '*\.swp', '\.swo', '\.swn', '\.swh', '\.swm', '\.swl', '\.swk', '\.sw*$', '[a-zA-Z]*egg[a-zA-Z]*', '.DS_Store']
@@ -33,7 +42,6 @@ set t_Co=256
 
 "--------------mapNewKeys------------
 map <C-l> :nohl<CR>             "关闭搜索高亮
-
 
 
 "----------------OtherVimSettingsByCsy-------------------
