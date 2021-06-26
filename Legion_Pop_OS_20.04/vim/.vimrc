@@ -122,7 +122,7 @@ set smartcase                 "如果同时打开了 ignorecase，那么对于�
 "set spell spelllang=en_us       "打开英语单词的拼写检查
 set nobackup                    "不创建备份文件
 set noswapfile                  "不创建交换文件
-set undofile                    "保留撤销历史
+"set undofile                    "保留撤销历史
 "set backupdir=~/.vim/.backup//  "设置备份文件、交换文件、操作历史文件的保存位置
 "set directory=~/.vim/.swp//
 "set undodir=~/.vim/.undo//

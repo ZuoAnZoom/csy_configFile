@@ -171,5 +171,7 @@ POWERLINE_BASH_SELECT=1
 . /home/csy/.local/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh
 
 
-
-
+# ROS settings
+source /opt/ros/noetic/setup.bash
+# my catkin_DIRS
+source /home/csy/workspace_csy/catkin_ws/devel/setup.bash
